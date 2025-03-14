@@ -47,11 +47,12 @@ limbika_agencia_de_fotografia/
 
 ## 🌍 Despliegue
 
-Próximamente disponible en una URL pública.
+La página está disponible en el siguiente enlace:
+[Ver Limbika en línea](https://heberpalacio.github.io/limbika_agencia_de_fotografia/)
 
 ## 📬 Contacto
 
-Para consultas o colaboraciones, envíanos un mensaje a **[ heber.pg27@gmail.com ]**.
+Para consultas o colaboraciones, envíanos un mensaje a **[heber.pg27@gmail.com]**.
 
 ---
 
