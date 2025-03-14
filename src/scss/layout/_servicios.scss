@@ -1,0 +1,88 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.servicios {
+    background-color: v.$color-ter;
+    padding: 7rem 0 7rem 0;
+    h1 {
+        text-align: center;
+        color: v.$color-sec;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-top: 0;
+
+        @include m.tablet {
+            font-size: 5.5rem;
+        }
+    }
+
+    .servicio-uno, .servicio-dos {
+        color: v.$color-cuar;
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: v.$fuente_sec;
+        font-weight: 400;
+        margin: 5rem 5rem 0 5rem;
+
+        @include m.tablet {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+.servicio-contenedor {
+    @include m.contenedor;
+    @include m.tablet {
+        @include m.grid(2);
+    }
+
+}
+
+.seccion {
+    border-style: solid;
+    border-color: v.$color-cuar;
+    border-radius: 5rem;
+    padding: 3rem;
+    margin: 5rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.tablet {
+        margin: 5rem 0 0 0;
+    }
+}
+
+.nombre-servicio {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 2rem 2rem 2rem;
+    color: v.$color-sec;
+
+    @include m.tablet {
+        margin: 0 5rem 2rem 5rem;
+    }
+}
+
+.img-servicios {
+
+    border-radius: 1rem;
+    height: auto;
+    width: 100%;
+
+    @include m.tablet {
+        width: 90%;
+    }
+
+}
+
+.descripcion {
+    margin: 2rem 1rem 0 1rem;
+    color: v.$color-sec;
+
+    @include m.tablet{
+        margin: 2rem 4rem 0 4rem;
+    }
+}

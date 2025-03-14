@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimbiKa</title>
+
+    <!-- Fuente - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fuente - Yeseva One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <!-- Sector de Navegación -->
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <a href="#" onclick="window.location.reload();">
+                <h1>Limbi<span class="resaltado">Ka</span></h1>
+            </a>
+
+            <nav class="navegacion-principal">
+                <a href="#info">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#reserva">Reserva</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Sector de Video -->
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Agencia de Fotografía</h2>
+                <p>"La sutíl alquimia del tiempo y la luz."</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/Fotografo.mp4" type="video/mp4"/>
+            <source src="video/Fotografo.ogv" type="video/ogg"/>
+            <source src="video/Fotografo.webm" type="video/webm"/>
+        </video>
+    </div>
+
+    <!-- Sector Informativo -->
+    <section id="info" class="info">
+
+        <div class="imagen">
+            <img class="img-info" src="src/img/img_info_byn.jpg" alt="Camarógrafa">
+        </div>
+
+        <div class="contenido-informativo">
+            <h2 class="titulo">Limbika</h2>
+            <p class="somos">¿Quienes somos?</p>
+            <p class="text-info"> En Limbika, transformamos la luz y la sombra en narrativas visuales. Nuestra esencia radica en la alquimia de la imagen, evocando emociones profundas a través de atmósferas cinematográficas. Nos inspiran la nostalgia, la soledad y la belleza de lo intangible: paisajes nublados, noches lluviosas, bosques envueltos en niebla. Cada encuadre es un instante eterno, cada fotografía un reflejo de lo que no se dice pero se siente. Capturamos la sutileza de la oscuridad, el misterio de la luz y la melancolía del tiempo detenido.</p>
+        </div>
+    </section>
+
+    <!-- Sector de Servicios -->
+    <section id="servicios" class="servicios">
+        <h1>Servicios que ofrecemos</h1>
+    
+        <h2 class="servicio-uno">Narrativas Visuales Cinematográficas</h2>
+        <div class="servicio-contenedor">
+            <div class="seccion">
+                <h3 class="nombre-servicio">Fotografía artística y conceptual</h3>
+                <img class="img-servicios" src="src/img/gallery/foto-conceptual.jpg" alt="">
+                <p class="descripcion">Capturamos imágenes que evocan emociones profundas, inspiradas en la estética del cine y la atmósfera de lo intangible.</p>
+                
+            </div> <!--.seccion-->
+    
+            <div class="seccion">
+                <h3 class="nombre-servicio">Dirección de fotografía para cine</h3>
+                <img class="img-servicios" src="src/img/gallery/foto-cinematografica.jpg" alt="">
+                <p class="descripcion">Diseñamos la luz y el encuadre para producciones audiovisuales, creando atmósferas únicas y memorables.</p>
+            </div> <!--.seccion-->
+        </div> <!--.servicio-contenedor -->
+    
+    
+        <h2 class="servicio-dos">Imagen y Estética de Marca</h2>
+        <div class="servicio-contenedor">
+            <div class="seccion">
+                <h3 class="nombre-servicio">Campañas publicitarias</h3>
+                <img class="img-servicios" src="src/img/gallery/foto-publicitaria.jpg" alt="">
+                <p class="descripcion">Generamos imágenes con una identidad visual poderosa, transmitiendo historias con profundidad y estilo cinematográfico.</p>
+            </div> <!--.seccion-->
+    
+            <div class="seccion">
+                <h3 class="nombre-servicio">Consultoría y estilismo fotográfico</h3>
+                <img class="img-servicios" src="src/img/gallery/foto-estilismo.jpg" alt="">
+                <p class="descripcion">Asesoramos marcas y proyectos para desarrollar una identidad visual coherente, con un enfoque en la narrativa y la estética.</p>
+            </div> <!--.seccion-->
+        </div> <!--.servicio-contenedor -->
+    </section>
+
+    <!-- Sector de Galería -->
+
+    <section id="galeria" class="galeria">
+        <h1 class="galeria-titulo">Galería</h1>
+        <div class="galeria-imagenes"></div>
+    </section>
+
+    <!-- Sector de Reservas -->
+
+    <section id="reserva" class="contenedor-reserva">
+        <h1>Reserva tu Sesión</h1>
+    
+        <div class="reserva-servicio">
+            <div class="sesion">
+                <p class="sesion-nombre">Sesión Básica</p>
+                <header class="sesion-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="sesion-body">
+                    <ul>
+                        <li>30 minutos de sesión</li>
+                        <li>1 locación a elección</li>
+                        <li>2 cambios de vestuario</li>
+                        <li>Entrega de 5 fotos editadas en alta calidad</li>
+                        <li>_____________________________________________________</li>
+                    </ul>
+                </div>
+                <footer class="sesion-footer">
+                    <p>$80</p>
+                </footer>
+            </div>
+    
+            <div class="sesion">
+                <p class="sesion-nombre">Sesión Premium</p>
+                <header class="sesion-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="sesion-body">
+                    <ul>
+                        <li>1 hora de sesión</li>
+                        <li>2 locaciones a elección</li>
+                        <li>4 cambios de vestuario</li>
+                        <li>Entrega de 15 fotos editadas en alta calidad</li>
+                        <li>Acceso a galería privada</li>
+                    </ul>
+                </div>
+                <footer class="sesion-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+        
+    <footer class="footer">
+        <h3>Limbi<span class="resaltado">Ka</span></h3>
+        <p>© 2025 Heber Palacio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+
+</body>
+</html>

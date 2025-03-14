@@ -1,0 +1,110 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.contenedor-reserva {
+    padding: 7rem 0 7rem 0;
+
+    h1 {
+        color: v.$color_sec;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 5.5rem;
+        letter-spacing: 2rem;
+        margin: 0;
+        position: relative;
+        padding-bottom: 2rem; // Aumenta la separación del subrayado
+    
+        &::after {
+            content: "";
+            display: block;
+            width: 85%; 
+            height: .3rem;
+            background-color: v.$color-cuar; 
+            margin: 10px auto 0 auto;
+        }    
+    }
+
+    .reserva-servicio {
+        margin: 0 2rem;
+        @include m.desktop {
+            @include m.contenedor;
+            @include m.grid(2);
+        }
+    }
+}
+
+.sesion {
+    transition: transform .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+    .sesion-nombre {
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem 2rem 2rem 2rem;
+        font-weight: 600;
+        color: v.$color-sec;
+
+        @include m.desktop{
+            margin: 5rem 5rem 2rem 5rem;
+        }
+    }
+}
+
+.sesion-header, .sesion-footer {
+    padding: .5rem;
+
+    p {
+        text-align: center;
+        color: v.$color-sec;
+        margin: 0;
+    }
+}
+
+.sesion-header {
+    background-color: v.$color-ter;
+    p {
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        padding: 1rem 0;
+        font-weight: 600;
+    }
+}
+
+.sesion-body {
+    background-color: v.$color-sec;
+    color: v.$color-pri;
+
+    ul {
+        @include m.resetear-lista;
+    }
+
+    li {
+        padding: 2rem;
+        border-bottom: 1px solid #e1e1e1;
+    }
+}
+
+.sesion-footer {
+    background-color: v.$color-sec;
+    padding: 3rem;
+    
+    p {
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        padding: 1rem 0;
+        font-weight: 900;
+        color: v.$color-pri;
+        background-color: v.$color-cuar;
+        padding: 1rem 0;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: color.adjust(v.$color-cuar, $lightness: -5%);
+        }
+    }
+}
+

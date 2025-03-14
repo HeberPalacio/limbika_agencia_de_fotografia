@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+
+.footer {
+    background-color: v.$color_ter;
+    margin: 0;
+    padding: 2rem;
+
+    h3, p {
+        color: v.$color_sec;
+        text-align: center;
+    }
+
+    h3{
+        color: v.$color_sec;
+        text-align: center;
+        font-weight: 500;
+        font-family: v.$fuente_sec;
+        margin: 0;
+     }
+    
+    .resaltado {
+    color: v.$color_cuar;
+    font-weight: 800;
+    font-family: v.$fuente_pri;
+    }
+    
+    p {
+        margin-bottom: 0;
+        margin-top: 1rem;
+        letter-spacing: .2rem;
+    }
+}
+
